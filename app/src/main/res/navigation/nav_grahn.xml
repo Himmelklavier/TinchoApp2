@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grahn"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.tinchoapp2.view.ui.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_entradasFragment"
+            app:destination="@id/entradasFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_cortesFragment"
+            app:destination="@id/cortesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_cositasFragment"
+            app:destination="@id/cositasFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_especialidadesFragment"
+            app:destination="@id/especialidadesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_pizzaFragment"
+            app:destination="@id/pizzaFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_bebidasFragment"
+            app:destination="@id/bebidasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/entradasFragment"
+        android:name="com.example.tinchoapp2.view.ui.fragments.EntradasFragment"
+        android:label="fragment_entradas"
+        tools:layout="@layout/fragment_entradas" />
+    <fragment
+        android:id="@+id/cortesFragment"
+        android:name="com.example.tinchoapp2.view.ui.fragments.CortesFragment"
+        android:label="fragment_cortes"
+        tools:layout="@layout/fragment_cortes" />
+    <fragment
+        android:id="@+id/cositasFragment"
+        android:name="com.example.tinchoapp2.view.ui.fragments.CositasFragment"
+        android:label="fragment_cositas"
+        tools:layout="@layout/fragment_cositas" />
+    <fragment
+        android:id="@+id/especialidadesFragment"
+        android:name="com.example.tinchoapp2.view.ui.fragments.EspecialidadesFragment"
+        android:label="fragment_especialidades"
+        tools:layout="@layout/fragment_especialidades" />
+    <fragment
+        android:id="@+id/pizzaFragment"
+        android:name="com.example.tinchoapp2.view.ui.fragments.PizzaFragment"
+        android:label="fragment_pizza"
+        tools:layout="@layout/fragment_pizza" />
+    <fragment
+        android:id="@+id/bebidasFragment"
+        android:name="com.example.tinchoapp2.view.ui.fragments.BebidasFragment"
+        android:label="fragment_bebidas"
+        tools:layout="@layout/fragment_bebidas" />
+</navigation>
